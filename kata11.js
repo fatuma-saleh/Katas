@@ -16,11 +16,13 @@ const coneVolume = function (radius, height) {
 
 console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
 
-// const prismVolume = function (height, width, depth) {
-//   // Probably here too!
-// }
+const prismVolume = function (height, width, depth) {
+  // Probably here too!
+  let pvolume = height * width * depth
+  return pvolume; 
+}
 
-// console.log(prismVolume(3, 4, 5) === 60);
+console.log(prismVolume(3, 4, 5) === 60);
 
 // const totalVolume = function (solids) {
 //   // Code here? Yup!
