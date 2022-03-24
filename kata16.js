@@ -13,13 +13,27 @@ const makeCase = function (input, Case) {
       }
       return output;
       break;
+
+      case "pascal":
+       output= input[0].toUpperCase()
+      for (let i = 1; i < input.length; i++) {
+        if (input[i] === " ") {
+          output += input[i + 1].toUpperCase();
+          i++
+        } else {
+          output = output + input[i];
+        }
+      }
+      return output;
+      break;
+
     default:
       break;
   }
 };
 
 console.log(makeCase("this is a string", "camel"));
-// console.log(makeCase("this is a string", "pascal"));
+console.log(makeCase("this is a string", "pascal"));
 // console.log(makeCase("this is a string", "snake"));
 // console.log(makeCase("this is a string", "kebab"));
 // console.log(makeCase("this is a string", "title"));
