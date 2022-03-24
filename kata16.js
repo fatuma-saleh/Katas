@@ -26,7 +26,18 @@ const makeCase = function (input, Case) {
       }
       return output;
       break;
-
+      case "snake":
+        
+       for (let i = 0; i <input.length; i++) {
+         if (input[i] === " ") {
+           output += '_';
+     
+         } else {
+           output = output + input[i];
+         }
+       }
+       return output;
+       break;
     default:
       break;
   }
@@ -34,7 +45,7 @@ const makeCase = function (input, Case) {
 
 console.log(makeCase("this is a string", "camel"));
 console.log(makeCase("this is a string", "pascal"));
-// console.log(makeCase("this is a string", "snake"));
+console.log(makeCase("this is a string", "snake"));
 // console.log(makeCase("this is a string", "kebab"));
 // console.log(makeCase("this is a string", "title"));
 // console.log(makeCase("this is a string", "vowel"));
