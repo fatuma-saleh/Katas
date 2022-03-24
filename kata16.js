@@ -63,6 +63,19 @@ const makeCase = function (input, Case) {
       }
       return output;
       break;
+
+      case "vowel":
+        for (let i = 0; i < input.length; i++) {
+          if (input[i] === "a" ||input[i] === "e" ||input[i] === "i"||input[i] === "o" ||input[i] === "u" ) {
+            output += input[i].toUpperCase()
+            
+          } else {
+            output = output + input[i];
+          }
+        }
+        return output;
+        break;
+
     default:
       break;
   }
@@ -73,7 +86,7 @@ console.log(makeCase("this is a string", "pascal"));
 console.log(makeCase("this is a string", "snake"));
 console.log(makeCase("this is a string", "kebab"));
 console.log(makeCase("this is a string", "title"));
-// console.log(makeCase("this is a string", "vowel"));
+console.log(makeCase("this is a string", "vowel"));
 // console.log(makeCase("this is a string", "consonant"));
 // console.log(makeCase("this is a string", ["upper", "snake"]));
 
