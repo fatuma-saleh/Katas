@@ -1,0 +1,25 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "These are some exercises that help sharpen the basic concepts of Js programming.",
+  "main": "kata10.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatuma-saleh/Katas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatuma-saleh/Katas/issues"
+  },
+  
+  "dependencies": {
+    "prompt-sync": "^4.1.5"
+  },
+  "homepage": "https://github.com/fatuma-saleh/Katas#readme"
+
+  
+}
