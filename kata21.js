@@ -47,6 +47,12 @@ for(let mostPop in countObj){
 
   return famous
 }
+
+
+//Implement printAll() which outputs a list of everyone and for each of them, the names of who they follow and who follows them.
+const printAll = function(){
+  
+}
 const data = {
   f01: {
     name: "Alice",
