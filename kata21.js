@@ -17,6 +17,12 @@ const biggestFollower = function (data) {
   return temp
 };
 
+
+//Implement mostPopular() which returns the name of the most popular (most followed) individual.
+
+const mostPopular = function(data){
+  
+}
 const data = {
   f01: {
     name: "Alice",
