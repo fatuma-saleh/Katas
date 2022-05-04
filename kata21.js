@@ -21,7 +21,31 @@ const biggestFollower = function (data) {
 //Implement mostPopular() which returns the name of the most popular (most followed) individual.
 
 const mostPopular = function(data){
+  let countObj = {}, max = 0,famous = ""            
+  for(const persons in data){
+    let p = data[persons]
+    for(let follow of p.follows){
+      if(countObj[follow]){
+        countObj[follow]++
+      }else{
+        countObj[follow]=1
+      }
+    }
+  }
+for(let mostPop in countObj){
+               
+  if(countObj[mostPop]>max){
+    max = countObj[mostPop]
+    famous = mostPop
+  }
+}
   
+
+
+
+
+
+  return famous
 }
 const data = {
   f01: {
@@ -57,3 +81,4 @@ const data = {
 };
 
 console.log(biggestFollower(data));
+console.log(mostPopular(data));
